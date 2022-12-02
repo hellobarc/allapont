@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable Compleja</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<style type="text/css">
+.article{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+body {
+  /*font-family: Arial, sans-serif;*/
+}
+table, td, th {
+	border: 1px solid black;
+}
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+  	text-align: center;
+}
+</style>
+
+
+
+
+<div class="article">
+  <h1>1. Número complejos - Ejercicio 7.1.a</h1>
+  <hr>
+  <p>Hallar un valor de \(\text{arg} (z)\) para \(z = \frac{-2}{1+\sqrt{3}i}\) </p>
+  
+  <div style="overflow: auto;">
+    <fieldset >  
+      <legend><h2>Argumento de un número complejo</h2></legend> 
+      <p>El argumento de un número complejo \(z=x+iy\) está dado por la siguiente regla:   </p>
+      <p>
+        \( \text{arg} (z) =
+        \begin{cases}
+          \arctan (y/x) &\text{si } x > 0 \\
+          \arctan (y/x)+ \pi  &\text{si } x < 0, y \geq 0  \\
+          \arctan (y/x)- \pi  &\text{si } x < 0, y < 0  \\
+          \pi/2               &\text{si } x = 0, y > 0  \\
+          -\pi/2              &\text{si } x = 0, y < 0  \\
+          \text{indefinido}   &\text{si } x = 0, y = 0  \\
+        \end{cases}
+        \)
+      </p>
+    </fieldset>
+  </div>
+
+  <div style="overflow: auto;">
+    <fieldset >  
+      <legend><h2>División por un número complejo</h2></legend> 
+      <p>Para dividir por un número compejo, hay que multiplicar el numerador y el denominador por el conjugado del número complejo que se está dividiendo:  </p>
+      <p>
+      \(
+        \begin{aligned}
+          \displaystyle \frac{x+iy}{u+iv} &= \frac{x+iy}{u+iv} \frac{u-iv}{u-iv}  \\
+        \end{aligned}
+      \)
+      </p>
+    </fieldset>
+  </div>
+
+
+
+  <p>Por lo tanto se escribe la expresión como: </p>
+
+  <p>
+    \(
+      \begin{aligned}
+        \displaystyle \frac{-2}{1+\sqrt{3}i} &= \frac{-2}{1+\sqrt{3}i}  \frac{1-\sqrt{3}i}{1-\sqrt{3}i} \\
+        &= \frac{-2+2\sqrt{3}i}{1-\sqrt{3}i+\sqrt{3}i-(\sqrt{3}i)^2}   \\
+        &= \frac{-2+2\sqrt{3}i}{1-\sqrt{3}^2 i^2}   \\
+        &= \frac{-2+2\sqrt{3}i}{4}   \\
+        &= \frac{2(-1+\sqrt{3}i)}{4}   \\
+        &= \frac{-1+\sqrt{3}i}{2}   \\
+        &= \underbrace{\frac{-1}{2}}_{x=\text{Re}(z)} + i\underbrace{\frac{\sqrt{3}}{2}}_{y=\text{Im}(z)}  \\
+      \end{aligned}
+    \)
+  </p>
+
+  <p>
+    Ahora se halla el argumento de \(\text{arg} (z)\), como \(x < 0, y \geq 0\), el argumento viene dado por:
+
+    \( \displaystyle \arctan \Bigl( \frac{y}{x} \Bigl) +\pi  \)
+
+
+  </p>
+
+  <p>Entonces pude escribirse:</p>
+
+  <p>
+    \(
+      \begin{aligned}
+        \displaystyle \arctan \Bigg( \frac{\frac{\sqrt{3}}{2}}{\frac{-1}{2}} \Bigg) +\pi &= \arctan ( -\sqrt{3} ) +\pi \\
+        &= -\frac{\pi}{3}+ \pi  \\
+        &= \frac{2\pi}{3} \\
+      \end{aligned}
+    \)
+  </p>
+
+  <p>\( \therefore \text{arg}(z) = \displaystyle \frac{2\pi}{3} \) </p>
+
+
+
+  <hr>
+  <p>En caso de encontrar un error en el ejercicio, se agradece enviar la observación a:</p>
+  <p>luismalaga@alappont.com</p>
+  <p>Luis Alejandro Málaga Allca</p>
+  <p>Director de Investiagación, Desarrollo e Inovación </p>
+  <p>Alappont S.A.C.</p>
+</div>
+
+
+
+
+		
+</body>
+</html>

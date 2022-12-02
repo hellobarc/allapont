@@ -1,0 +1,62 @@
+"error_id","error","created_at","updated_at"
+"1","Se usó para describir la confiabilidad del instrumento 000",NULL,NULL
+"2","Sin errores 000",NULL,NULL
+"3","Se interpreta la significancia del coeficiente de correlación para una muestra no aleatoria",NULL,NULL
+"4","Se utiliza como indicador de validez en la descripción del instrumento, sin embargo, no se reportan los indicadores de ajuste",NULL,NULL
+"5","Se utiliza como indicador de validez en la descripción del instrumento 000",NULL,NULL
+"6","Se empleó sin verificar la normalidad de los datos",NULL,NULL
+"7","Se usan para presentar las normas del instrumento 000",NULL,NULL
+"8","Se usó para describir la confiabilidad del instrumento, pero no se da más información sobre que técnica en específico es la que se emplea para determinar la confiabilidad, ya que hay varios tipos de métodos de las dos mitades.",NULL,NULL
+"9","Solo se señala el nombre del procedimiento, no se indican cuales fueron los resultado, ni la técnica matemática utilizada para el contraste.",NULL,NULL
+"10","No se especifica la formula empleada",NULL,NULL
+"11","No se especifica si es análisis factorial confirmatorio o exploratorio, tampoco se presenta el resumen de los resultados de dicho análisis",NULL,NULL
+"12","Se emplea como indicador de validez, la descripción del procedimiento esta incompleta",NULL,NULL
+"13","Se emplea como indicador de que el análisis factorial es bueno, más solo se reporta junto con el KMO, siendo la descripción insuficiente",NULL,NULL
+"14","Se emplea como indicador de que el análisis factorial es bueno, más solo se reporta junto con la prueba de Bartlett, siendo la descripción insuficiente",NULL,NULL
+"15","Se utiliza el coeficiente de Pearson sin verificar la normalidad de los datos",NULL,NULL
+"16","No se señala si los datos cumplen con los supuestos para aplicar una prueba paramétrica",NULL,NULL
+"17","Se señala como indicador de validez, no se indica de qué manera se utilizó, se reporta junto a la prueba U o rho (depende del caso), pero solo reporta un indicador. No se cita la fuente. Estos procedimientos no son comunes para el calculo de la validez por lo que debería explicarse este procedimiento.",NULL,NULL
+"18","Se emplea la prueba U para un estudio longitudinal (evaluar las diferencias pre-post de un programa), el procedimiento apropiado sería Wilcoxon 𝑇 que es el equivalente a prueba 𝑡 para muestras relacionadas.",NULL,NULL
+"19","Utiliza el Alpha de Cronbach como indicador de validez y confiabilidad",NULL,NULL
+"20","No se especifica si es análisis factorial confirmatorio o exploratorio",NULL,NULL
+"21","Utiliza el Alpha de Cronbach como indicador de validez",NULL,NULL
+"22","Se interpreta la significancia del coeficiente de correlación para una muestra censal, es decir toda la población, no se prueban los supuesto de normalidad de los datos.",NULL,NULL
+"23","No indica los resultados de la prueba.",NULL,NULL
+"24","Se utiliza el coeficiente de Pearson sin verificar la normalidad de los datos. Se interpreta la significancia como indicador de existencia de la correlación, cuando indica la generalización del coeficiente de la muestra a la población",NULL,NULL
+"25","Se utiliza como indicador de confiabilidad, cuando en verdad solo identifica los factores de riesgo asociados.",NULL,NULL
+"26","Se usa para verificar las diferencias según tiempo de relación, edad 000",NULL,NULL
+"27","Hay un error en el resultado, si se tiene una población de 1382 al 6% de error y los demás parámetros de manera estándar el valor sería de 224.",NULL,NULL
+"28","Se empleó para verificar la autonomía de los ítems dentro de la escala. 000",NULL,NULL
+"29","No se especifica que prueba tau se utilizó, además no se reporta el valor de la prueba, solo su significancia. Se describe bajo una tabla de doble entrada, no corresponde a la prueba tau.",NULL,NULL
+"30","Tau toma valores entre 0 y 1. Se reportan valores que caen fuera de este intervalo, se puede asumir que se han multiplicado por 100 pero no se indica.",NULL,NULL
+"31","La ecuación no es comprensible, no se especifica como está definido el operador \(\&\), además. Solo resulta llamativa porque esta formulada en modo ecuación.",NULL,NULL
+"32","Usada en su versión de prueba de bondad de ajuste. 000",NULL,NULL
+"33","Se utilizó para calcular la puntuación de las dimensiones en la corrección del instrumento 000",NULL,NULL
+"34","Interpretación del p-valor incorrecta error de tipo II. Se acepta la hipótesis nula cuando es falsa.",NULL,NULL
+"35","Se ha verificado que los datos siguen una distribución no normal, sin embargo se emplea r de Pearson en vez de Rho de Spearman",NULL,NULL
+"36","Se emplea como indicador de validez cuando es indicador de confiabilidad",NULL,NULL
+"37","Se confunde \(Z\) con  \(e\)",NULL,NULL
+"38","No se especifica se lis datos cumplen los supuestos para emplear una prueba paramétrica. Se emplea una prueba t para muestras independientes, cuando, al tratarse de un programa, lo correcto es aplicar una prueba t para muestras relacionadas (antes y después).",NULL,NULL
+"39","Se empleó ANOVA para verificar las diferencias pre test – post test, lo recomendado sería una prueba t para muestras relacionadas. Además, el ANOVA es para grupos independientes, la alternativa de ANOVA para grupos relacionados es el ANOVA para medidas repetidas.",NULL,NULL
+"40","Se emplea la prueba H para verificar las diferencias entre le grupo experimental  el grupo control, cuando, al tener dos grupos, el experimental y el control, lo recomendable sería emplear la prueba Wilcoxon 𝑇",NULL,NULL
+"41","Al rehacer el cálculo se obtiene un tamaño de muestra que no coincide con el señalado en la investigación",NULL,NULL
+"42","Se utilizó para comparar más de dos grupos",NULL,NULL
+"43","Se indica que se empleó una prueba t para muestras relacionadas, sin embargo se comparan grupos independientes",NULL,NULL
+"44","Se menciona que la consistencia interna y confiabilidad como propiedades diferentes, cuando refieren al mismo indicador, el Alpha de Cronbach.",NULL,NULL
+"45","Se indica que el error muestral es de 4% , sin embargo, en la ecuación cuando se reemplaza el parámetro \(e\) se pone como 5, sin decimales. Además, no se puede recrear el tamaño de la muestra obtenida.",NULL,NULL
+"46","La ecuación esta mal escrita, el tamaño de la muestra no coincide al recrear el calculo",NULL,NULL
+"47","Se asume que el KMO es un indicador de validez, análogo al Alpha de Cronbach en la confiabilidad. En verdad este indicador solo señala si los datos son apropiados para la realización de un análisis factorial.",NULL,NULL
+"48","No se pudieron recrear los resultados de la prueba Chi-cuadrado. La presentación de los resultados se mostró inconsistente en varios cuadros, no siendo entendible.",NULL,NULL
+"49","Los resultados no se pudieron recrear.",NULL,NULL
+"50","Se señala el procedimiento con el nombre de “Rho de Spearmanbrown”",NULL,NULL
+"51","La interpretación de las pruebas de normalidad es errónea, se afirma que los datos siguen una distribución normal, los datos no siguen una distribución normal.",NULL,NULL
+"52","Se utiliza una prueba paramétrica pese a que los datos no siguen una distribución normal.",NULL,NULL
+"53","La ecuación está mal escrita, solo se señala \(N\) más no se señala \(N-1\).",NULL,NULL
+"54","Interpretación inadecuada, se interpreta la asociación lineal por lineal en vez de la significancia de la prueba Chi.",NULL,NULL
+"55","Se uso la prueba chi cuadrado para verificar las diferencias antes y después de la aplicación de un programa. Este es un uso inadecuado de la prueba Chi-cuadrado, ya que esta indica la dependencia o independencia de los datos, no la existencia de diferencias entre estos. Las siguientes técnicas son adecuadas T de Wilcoxon y t de Student para muestras relacionadas.",NULL,NULL
+"56","Utilizada como indicador de validez de constructo, pero su uso es poco claro. Ya que como se sabe, esta prueba se utiliza para decidir si puede o no aceptarse que determinado “tratamiento” induce un cambio en la respuesta de los elementos sometidos al mismo, y es aplicable a los diseños del tipo “antes-después” en los que cada elemento actúa como su propio control.",NULL,NULL
+"57","Esta ecuación parece no tener sentido ya que \(n_e\) se cancela en la ecuación.",NULL,NULL
+"58","Se usa la prueba T de Wilcoxon para comprar grupos independientes. La prueba correcta sería U de Mann-Whitney.",NULL,NULL
+"59","Se menciona que se empleó la prueba Kuder Richardson, sin embargo, la ecuación presentada corresponde al Alfa de Cronbach.",NULL,NULL
+"60","Al parecer se aplica la prueba t para muestras independientes, sin embargo las ecuaciones presentadas no coinciden con lo descrito en la literatura para la prueba t para muestras independientes.",NULL,NULL
+"61","Se indica que se empleó la Chi Cuadrada con residuos tipificados, ya que estos están acotados en el intervalo [0,1], se podría asumir que su expresión en porcentajes son lo que el autor colocó en la investigación, sin embargo, se han colocado dos de estos calores por cada correlación, lo cual no hace sentido a la técnica empleada.",NULL,NULL

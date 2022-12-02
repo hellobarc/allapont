@@ -1,0 +1,70 @@
+<h2>Agradecimientos</h2>
+
+
+<div id="mostrador" uk-grid="" class="uk-child-width-1-5@m uk-grid" style="margin: 40px;">
+        <div class="uk-first-column">
+            <div class=" cardOne uk-card uk-card-body ">
+                <div tabindex="0" class="uk-inline-clip uk-transition-toggle uk-text-center resPonentes">
+                    <img src="https://www.alappont.com/courses/instructores/ins_1591550297.erickher.jpg" class="imgCursoCard imgPonentes" style="border-radius: 10000px;">
+                </div>
+            </div> 
+            <div class="uk-text-center">
+                <p>Abog. Erick Fernando Hernandez Ascencio</p>
+            </div>
+        </div>
+
+        <div>
+            <div class=" cardOne uk-card uk-card-body ">
+                <div tabindex="0" class="uk-inline-clip uk-transition-toggle uk-text-center resPonentes">
+                    <img src="https://www.alappont.com/courses/instructores/ins_1591550297.jaime.jpg" class="imgCursoCard imgPonentes" style="border-radius: 10000px;">
+                </div>
+            </div> 
+            <div class="uk-text-center">
+                <p>Abog. Jaime Diego Huailla Calle</p>
+            </div>
+        </div> 
+        
+        <div>
+            <div class=" cardOne uk-card uk-card-body ">
+                <div tabindex="0" class="uk-inline-clip uk-transition-toggle uk-text-center resPonentes">
+                    <img src="https://www.alappont.com/courses/instructores/ins_1591550302.renzo.jpg" class="imgCursoCard imgPonentes" style="border-radius: 10000px;">
+                </div>
+            </div> 
+            <div class="uk-text-center">
+                <p>Abog. Renzo Francisco Peña Colán</p>
+            </div>
+        </div> 
+
+        <div>
+            <div class=" cardOne uk-card uk-card-body ">
+                <div tabindex="0" class="uk-inline-clip uk-transition-toggle uk-text-center resPonentes">
+                    <img src="https://www.alappont.com/courses/instructores/ins_1591550302.virna.jpg" class="imgCursoCard imgPonentes" style="border-radius: 10000px;">
+                </div>
+            </div> 
+            <div class="uk-text-center">
+                <p>Abog. Virna Alicia Sánchez García</p>
+            </div>
+        </div> 
+
+        <div class="uk-grid-margin uk-first-column">
+            <div class=" cardOne uk-card uk-card-body ">
+                <div tabindex="0" class="uk-inline-clip uk-transition-toggle uk-text-center resPonentes">
+                    <img src="https://www.alappont.com/courses/instructores/ins_1591550302.diegoalar.jpg" class="imgCursoCard imgPonentes" style="border-radius: 10000px;">
+                </div>
+            </div> 
+            <div class="uk-text-center">
+                <p>Abog. Diego Alarcón Donayre</p>
+            </div>
+        </div>
+
+        <div class="uk-grid-margin">
+            <div class=" cardOne uk-card uk-card-body ">
+                <div tabindex="0" class="uk-inline-clip uk-transition-toggle uk-text-center resPonentes">
+                    <img src="https://www.alappont.com/courses/instructores/ins_1591550302.russell.jpg" class="imgCursoCard imgPonentes" style="border-radius: 10000px;">
+                </div>
+            </div> 
+            <div class="uk-text-center">
+                <p>Abog. Russell Saúl Chire Gutierrez</p>
+            </div>
+        </div>
+</div>

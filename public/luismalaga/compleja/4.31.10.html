@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable Compleja</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<style type="text/css">
+.article{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+body {
+  /*font-family: Arial, sans-serif;*/
+}
+table, td, th {
+	border: 1px solid black;
+}
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+  	text-align: center;
+}
+</style>
+
+
+<div class="article">
+  <h1>4. Integrales - Ejercicio 31.10</h1>
+  <hr>
+  <p>Supongamos que una función \(f(z)\) es analítica en un punto \(z_0=z_0(t)\) de un arco diferenciable \(z=z(t) (a \leq t \leq b)\).</p>
+
+  <p>Probar que si \(w(t) = f[z(t)]\) entonces: \(w'(t) = f'[z(t)]z'(t) \), cuando \(t=t_0\)</p>
+
+  <fieldset>  
+    <legend> <h2> Regla de la cadena para funciones de dos variables</h2></legend> 
+    <p>Sea \(f(x,y)\) una función de dos variables, ambas función de una variable \(t\) de modo que \(x(t)\) y \(y(t)\)</p>
+    <p>Se tiene, entonces que \(f(x(t),y(t))=F(t)\)</p>
+    <p>La regla de la cadena para funciones de dos variables es:</p>
+    <p>\(\displaystyle \frac{dF}{dt} = \frac{\partial f}{\partial x} \frac{dx}{dt} + \frac{\partial f}{\partial y} \frac{dy}{dt} \)</p>
+  </fieldset>
+
+  <fieldset>  
+    <legend> <h2>Ecuaciones de Cauchy-Riemann</h2></legend> 
+    <p>Las ecuaciones de Cauchy-Riemann son:</p>
+    <p> \(
+          \begin{dcases}
+              u_x = v_y \\
+              u_y = -v_x
+          \end{dcases}
+        \)</p>
+  </fieldset>
+
+  <div style="overflow: auto;">
+    <h2>Prueba: </h2>
+    <p>Expresamos las funciones de la siguiente manera:</p> 
+
+    <ul>
+      <li>\( f(z)=u(x,y)+iv(x,y) \) </li>
+      <li>\( z(t) = x(t) + i y(t) \)</li>
+      <li>\( w(t) = u[x(t),y(t)]+iv[x(t),y(t)]\)</li>
+    </ul>
+
+    <p>Aplicamos la regla de la cadena para funciones de dos variables:</p>
+    <p>\(\displaystyle \frac{d w(t)}{dt}   = \frac{ \partial u[x(t),y(t)] }{\partial x}  \frac{dx(t)}{dt}  + \frac{ \partial u[x(t),y(t)] }{\partial y}  \frac{dy(t)}{dt} +i \Big( \frac{ \partial v[x(t),y(t)] }{\partial x}  \frac{dx(t)}{dt} + \frac{ \partial v[x(t),y(t)] }{\partial y}  \frac{dy(t)}{dt}    \Big)\)</p>
+    <p>Conviene simplificar la notación, por lo tanto reescribimos la expresión anterior:</p>
+    <p>\(w' = u_x x'+ u_y y' + i (v_x x'+v_y y')\)</p>
+    <p>Reemplazamos por las ecuaciones de Cauchy-Riemann </p>
+    <p>\(w' = u_x x' -v_x y' + i (v_x x'+u_x y')\)</p>
+    <p>Distribuimos la unidad imaginaria</p>
+    <p>\(w' = u_x x' -v_x y' + iv_x x' + i u_x y' \)</p>
+    <p>Agrupamos por términos semejantes</p>
+    <p>
+      \(
+        \begin{aligned}
+          w'  &=  (u_x x'+ i u_x y') + (iv_x x' - v_x y')    \\
+              &=  u_x (x'+ iy') + (iv_x x'  \underbrace{-v_x y'}_{+v_x y' i^2})   \\
+              &=  u_x (x'+ iy') + (iv_x x'  +v_x y' i^2)   \\
+              &=  u_x (x'+ iy') + iv_x (x'+i y') \\
+              &=  \underbrace{(u_x+ iv_x)}_{f'[z(t)]} \underbrace{(x'+ iy')}_{z'(t)}  \\
+        \end{aligned}
+      \)
+    </p>
+    <p>\( \therefore  w' = f'[z(t)]z'(t)  \) </p>
+    <hr>
+    <p>*Comentario: ¿Porque \( (u_x+ iv_x) = f'[z(t)] \) ?</p>
+
+  </div>
+
+  <hr>
+  <p>En caso de encontrar un error en el ejercicio, se agradece enviar la observación a:</p>
+  <p>luismalaga@alappont.com</p>
+  <p>Luis Alejandro Málaga Allca</p>
+  <p>Director de Investiagación, Desarrollo e Inovación </p>
+  <p>Alappont S.A.C.</p>
+</div>
+
+
+
+
+		
+</body>
+</html>

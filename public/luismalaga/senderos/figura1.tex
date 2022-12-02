@@ -1,0 +1,29 @@
+\documentclass{article} 
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{tikz} 
+\begin{document} 
+\usetikzlibrary{positioning,arrows.meta,quotes}
+\begin{tikzpicture}[
+transform shape, 
+node distance=2cm,
+thick, 
+r/.style = {circle, draw, minimum size=7mm},
+c/.style={rectangle, draw, minimum size=7mm},
+] 
+
+%nodes
+\node(A) {$A$}; 
+\node[right=2cm of A] (B)  {$B$}; 
+\node[below=1cm of A, xshift=1.2cm] (C)  {$C$}; 
+\node[below=.5cm of B, xshift=1.2cm] (X)  {$X$}; 
+
+\draw[->] (A) -- (C);
+\draw[->] (B) -- (C);
+\draw[->] (X) -- (C);
+\draw[<->] (A) to [bend left]  (B);
+
+\end{tikzpicture} 
+
+
+\end{document}

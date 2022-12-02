@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variable Compleja</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<style type="text/css">
+.article{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+body {
+  /*font-family: Arial, sans-serif;*/
+}
+table, td, th {
+	border: 1px solid black;
+}
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+  	text-align: center;
+}
+</style>
+
+
+<div class="article">
+  <h1>4. Integrales - Ejercicio 31.1.b</h1>
+  <hr>
+  <p>Calcular: \( \displaystyle \int_0^\frac{\pi}{6} e^{i2t} dt\) </p>
+  <p>Existen dos formas de calcular esta integral.</p>
+
+
+  <fieldset>  
+    <legend> <h2>División de números complejos en forma binómica </h2></legend> 
+    <p>La división de un número complejo se realiza multiplicando el conjugado del denominador por el numerador y el denominador.</p>
+    <p>\( \displaystyle \frac{z_1}{z_2} = \frac{z_1 \bar{z_2} }{z_2 \bar{z_2} }  \)</p>
+  </fieldset>
+
+  <fieldset>  
+    <legend> <h2>Fórmula de Euler </h2></legend> 
+    <p>\( e^{i \theta} = \cos \theta + i \sin \theta  \)</p>
+  </fieldset>
+  <hr>
+  <h2>Prueba 1: </h2>
+
+
+  <p>Integramos por sustitución:</p>
+  <p>\(u=2it\)</p>
+  <p>\(du = 2idt\)</p>
+  <p>\(\displaystyle dt = \frac{du}{2i }   \)</p>
+  <p>Reemplazamos en la integral original</p>
+
+  <p>
+    \(
+      \begin{aligned}
+      \displaystyle \int_0^\frac{\pi}{6} e^{i2t} dt  &=  \frac{1}{2i} \int_0^\frac{\pi}{6} e^{u} du    \\
+            &= -\frac{i}{2} \int_0^\frac{\pi}{6} e^{u} du    \\
+            &= -\frac{i}{2} e^{u} \biggm\vert_0^\frac{\pi}{6}\\
+            &= -\frac{i}{2} e^{2it} \biggm\vert_0^\frac{\pi}{6}\\
+            &= -\frac{i}{2} \Big( e^{ \frac{2 i\pi}{6}} - 1 \Big)  \\
+            &= -\frac{i}{2} \Big( e^{ \frac{i\pi}{3}} - 1 \Big)  \\
+            &= -\frac{i}{2} \Big( \cos \Big(\frac{\pi}{3}\Big) + i \sin \Big(\frac{\pi}{3}\Big) - 1 \Big)  \\
+            &= -\frac{i}{2} \Big( \frac{1}{2} + i  \frac{\sqrt{3}}{2} - 1 \Big)  \\
+            &= -\frac{i}{2} \Big(  i  \frac{\sqrt{3}}{2} - \frac{1}{2} \Big)  \\
+            &= \frac{\sqrt{3}}{4} + \frac{i}{4} \\
+      \end{aligned}
+    \)
+  </p>
+
+  <p>\(\therefore  \displaystyle \int_0^\frac{\pi}{6} e^{i2t} dt =  \frac{\sqrt{3}}{4} + \frac{i}{4}   \\\)</p>
+  
+  <!---->
+  <hr>
+  <h2>Prueba 2: </h2>
+
+  <p>
+    \(
+      \begin{aligned}
+      \displaystyle \int_0^\frac{\pi}{6} e^{i2t} dt  &=  \int_0^\frac{\pi}{6} \cos (2t) + i \sin (2t) dt    \\
+            &= \int_0^\frac{\pi}{6} \cos (2t) dt + i \int_0^\frac{\pi}{6}  \sin (2t) dt   \\
+      \end{aligned}
+    \)
+  </p>
+
+  <p>Se procede por sustitución</p>
+  <p>\(u=2t\)</p>
+  <p>\(du=2dt\)</p>
+  <p>\(dt=\frac{1}{2}du\)</p>
+  <p>Se reemplaza en la integral original</p>
+  <p>
+    \(
+      \begin{aligned}
+      \displaystyle \int_0^\frac{\pi}{6} \cos (2t) dt + i \int_0^\frac{\pi}{6}  \sin (2t) dt   &= \frac{1}{2}   \int_0^\frac{\pi}{6}  \cos (u) du +   \frac{i}{2} \int_0^\frac{\pi}{6}   \sin (u) du     \\
+            &= \frac{1}{2}     \sin (u) \biggm\vert_0^\frac{\pi}{6} -   \frac{i}{2}   \cos (u) \biggm\vert_0^\frac{\pi}{6}   \\
+            &= \frac{1}{2}     \sin (2t) \biggm\vert_0^\frac{\pi}{6} -   \frac{i}{2}   \cos (2t) \biggm\vert_0^\frac{\pi}{6}   \\
+            &= \frac{1}{2}    \Big[ \sin \Big(\frac{\pi}{3} \Big) - \sin (0)  \Big] -   \frac{i}{2}  \Big[ \cos \Big(\frac{\pi}{3} \Big) - \cos(0)  \Big]   \\
+            &= \frac{\sqrt{3}}{4} - \frac{i}{2}\Big(\frac{1}{2}-1\Big) \\
+            &= \frac{\sqrt{3}}{4} - \frac{i}{2}\Big(-\frac{1}{2}\Big) \\
+            &= \frac{\sqrt{3}}{4} + \frac{i}{4} \\
+      \end{aligned}
+    \)
+  </p>
+
+  <p>\(\therefore  \displaystyle \int_0^\frac{\pi}{6} e^{i2t} dt =  \frac{\sqrt{3}}{4} + \frac{i}{4}   \\\)</p>
+  
+
+
+  <hr>
+  <p>En caso de encontrar un error en el ejercicio, se agradece enviar la observación a:</p>
+  <p>luismalaga@alappont.com</p>
+  <p>Luis Alejandro Málaga Allca</p>
+  <p>Director de Investiagación, Desarrollo e Inovación </p>
+  <p>Alappont S.A.C.</p>
+</div>
+
+
+
+
+		
+</body>
+</html>

@@ -1,0 +1,235 @@
+"tecnica_id","created_at","updated_at","tecnica_name","tecnica_desc"
+"1",NULL,NULL,"Alfa de Cronbach","vacio"
+"2",NULL,NULL,"Frecuencias y porcentajes","vacio"
+"3",NULL,NULL,"Media","vacio"
+"4",NULL,NULL,"Desviación estándar","vacio"
+"5",NULL,NULL,"U de Mann-Whitney","vacio"
+"6",NULL,NULL,"Rho de Spearman","vacio"
+"7",NULL,NULL,"Análisis factorial confirmatorio","vacio"
+"8",NULL,NULL,"Correlación ítem-test","vacio"
+"9",NULL,NULL,"Confiabilidad Test-retest","vacio"
+"10",NULL,NULL,"Validez concurrente","vacio"
+"11",NULL,NULL,"Prueba de Chi-cuadrado","vacio"
+"12",NULL,NULL,"Tabla de doble entrada","vacio"
+"13",NULL,NULL,"𝑟 de Pearson","vacio"
+"14",NULL,NULL,"Centiles","vacio"
+"15",NULL,NULL,"Método de las dos mitades","vacio"
+"16",NULL,NULL,"Análisis factorial exploratorio","vacio"
+"17",NULL,NULL,"Análisis de grupos contrastados","vacio"
+"18",NULL,NULL,"Kolmogorov-Smirnov","vacio"
+"19",NULL,NULL,"Kuder Richardson","vacio"
+"20",NULL,NULL,"Análisis factorial","vacio"
+"21",NULL,NULL,"Prueba de esfericidad de Bartlett","vacio"
+"22",NULL,NULL,"Kaiser-Meyer-Olkin (KMO)","vacio"
+"23",NULL,NULL,"V de Aiken","vacio"
+"24",NULL,NULL,"Tau b de Kendall","vacio"
+"25",NULL,NULL,"𝑡 de Student para muestras independientes asumiendo varianzas poblacionales iguales","vacio"
+"26",NULL,NULL,"Raíz  cuadrada  del  error  cuadrático  medio  de  aproximación  (𝑅𝑀𝑆𝐸𝐴)","vacio"
+"28",NULL,NULL,"Rotación de Varimax con normalización de Kaiser","vacio"
+"29",NULL,NULL,"índice de validez de contenido de Lawshe","vacio"
+"30",NULL,NULL,"Prueba de Guttman","vacio"
+"31",NULL,NULL,"𝑡 de Student para muestras independientes","vacio"
+"32",NULL,NULL,"Spearman-Brown","vacio"
+"33",NULL,NULL,"Análisis de componentes principales","vacio"
+"34",NULL,NULL,"Rotación VARIMAX","vacio"
+"36",NULL,NULL,"Adjusted goodness of fit index (AGFI)","vacio"
+"37",NULL,NULL,"Ecuación de la muestra para un población conocida","\( n=\frac{N Z^2 p q}{e^2(N-1)+Z^2 pq} \)"
+"38",NULL,NULL,"Ecuación del bienestar subjetivo (Haidt, 2006)","\(F=B+C+V\)
+<br>
+\(F\):felicidad 
+<br>
+\(B\):línea de base biológica
+<br>
+\(C\):condiciones de vida
+<br>
+\(V\)actividades voluntarias"
+"39",NULL,NULL,"Shapiro-Wilk","vacio"
+"40",NULL,NULL,"Mediana","vacio"
+"41",NULL,NULL,"Moda","vacio"
+"42",NULL,NULL,"Varianza","vacio"
+"43",NULL,NULL,"Asimetría","vacio"
+"44",NULL,NULL,"Curtosis","vacio"
+"45",NULL,NULL,"Rango","vacio"
+"46",NULL,NULL,"Mínimo","vacio"
+"47",NULL,NULL,"Máximo","vacio"
+"48",NULL,NULL,"ANOVA de un factor","vacio"
+"49",NULL,NULL,"Rotación Oblimín","vacio"
+"50",NULL,NULL,"𝑡 de Student para muestras relacionadas","vacio"
+"51",NULL,NULL,"Odds ratio","vacio"
+"52",NULL,NULL,"Ecuación de la muestra de Arkin y Colton","\(n=\frac{400N}{N+399}\)"
+"53",NULL,NULL,"Comparative Fit Index (CFI)","vacio"
+"54",NULL,NULL,"Promedio de la correlación Inter-item","vacio"
+"55",NULL,NULL,"Tau de Kendall","Usar cuando no se específica la fórmula"
+"56",NULL,NULL,"Tau de Goodman-Kruskal","Mide la asociación para las tabulaciones cruzadas de las variables de niveles nominales.  Tau toma valores entre 0 y 1, significando el 0 ausencia de reducción del error de clasificación y el 1 reducción completa."
+"57",NULL,NULL,"Teoria del aprendizaje social de Rotter (Predictive Formula)","La teoría tiene cuatro variables 
+fundamentales: el potencial de conducta (\(PC\))
+<br>
+la expectativa (\(E\))
+<br>
+El valor del reforzador (\(VR\)) 
+<br>
+la situación psicológica.
+<br>
+ La 
+posibilidad de ocurrencia de una conducta en determinada  situacion y en relacion  can 
+cierto reforzador es una funcion de la expectativa de que el reforzador siga a la  conducta, 
+asi como de su valor.  Esta relacion se simboliza de la  siguiente manera:
+\[PC=E \& VR\]
+
+(Teorías del Aprendizaje de  Dale H. Schunk)"
+"58",NULL,NULL,"Regresión lineal múltiple","vacio"
+"59",NULL,NULL,"Coeficiente de determinación R²","vacio"
+"60",NULL,NULL,"H de Kruskal-Wallis","vacio"
+"61",NULL,NULL,"Análisis de correspondencia simple","vacio"
+"63",NULL,NULL,"Función definida a trozos","vacio"
+"64",NULL,NULL,"Eneatipo","vacio"
+"65",NULL,NULL,"D de Somers","vacio"
+"66",NULL,NULL,"Validez discriminante","vacio"
+"67",NULL,NULL,"Cociente Intelectual (C.I.)","\(CI=100(\frac{Edad \ mental}{Edad \ cronológica})\)"
+"68",NULL,NULL,"Ecuación de la muestra (Versión 3)","\(n=\frac{400N}{N+400}\)"
+"69",NULL,NULL,"Cálculo de la productividad total (Chiavenato, 2000)","\[Productividad \ PT=\frac{ Valor \ de \ venta \ de \ productos \ y/o \ servicio}{Costo \  total  \  de \  producción \  [Mano  de  obra  +  materiales  + energía + capital (depreciación)]}\]
+
+El resultado  de la aplicación de la fórmula es una cifra que se interpreta de la siguiente 
+manera: Si es mayor que 1, la productividad es positiva y se puede convertir en porcentual si 
+se calcula \( 100 (PT - 1) \).  Si la cifra obtenida es menor que 1, la productividad es negativa 
+
+(la unidad está operando a pérdida) y también se puede convertir en porcentaje con la misma 
+fórmula, con la diferencia de que va a salir con signo negativo."
+"70",NULL,NULL,"Coeficiente de correlación no especificado","Usar en caso no se especifique del coeficiente de correlación empleado"
+"71",NULL,NULL,"Validez de criterio","vacio"
+"72",NULL,NULL,"Bentler-Bonnet Non-Normed Fit Index (BBNFI)","vacio"
+"73",NULL,NULL,"Coeficiente de Contingencia","vacio"
+"74",NULL,NULL,"Ecuación de la muestra para un población desconocida o infinita","\[n=\frac{Z^2pq}{e^2}\]"
+"75",NULL,NULL,"Corrección de Yates","vacio"
+"76",NULL,NULL,"Regresión lineal simple","vacio"
+"77",NULL,NULL,"Kuder-Richardson 20","vacio"
+"78",NULL,NULL,"Wilcoxon 𝑇","vacio"
+"79",NULL,NULL,"Rotación Promax","vacio"
+"80",NULL,NULL,"d de Cohen","vacio"
+"81",NULL,NULL,"Sensibilidad","Es la probabilidad de clasificar correctamente a un individuo enfermo, es decir, la probabilidad de que 
+para un sujeto enfermo se obtenga en la prueba un resultado positivo. La sensibilidad es, por lo tanto, la 
+capacidad del test para detectar la enfermedad. 
+\[Sensibilidad=\frac{VP}{VP+FN}\]
+\(VP\):Verdadero positivo
+\(FN\):Falso negativo"
+"82",NULL,NULL,"Especificidad","Es la probabilidad de clasificar correctamente a un individuo sano, es decir, la probabilidad de que para un sujeto sano se obtenga un resultado negativo. En otras palabras, se puede definir la especificidad como la capacidad para detectar a los sanos.  fracción de verdaderos negativos (FVN)
+
+\[Especificidad=\frac{VN}{VN+FP}\]
+
+\(VN\): Verdadero negativo,
+\(FP\): Falso positivo"
+"83",NULL,NULL,"Análisis de Covarianza (ANCOVA)","vacio"
+"84",NULL,NULL,"Corrección de Bonferroni","vacio"
+"85",NULL,NULL,"Contrastes de Helmert","vacio"
+"86",NULL,NULL,"Análisis de correspondencias","vacio"
+"87",NULL,NULL,"Prueba de Duncan","vacio"
+"88",NULL,NULL,"Regresión logística","vacio"
+"89",NULL,NULL,"Prueba de McNemar","vacio"
+"90",NULL,NULL,"Valor predictivo positivo","\[VPP=\frac{VP}{VP+FP}\]"
+"91",NULL,NULL,"Valor predictivo negativo","\[VPN=\frac{VN}{FN+VN}\]"
+"92",NULL,NULL,"Coeficiente kappa de Cohen","vacio"
+"93",NULL,NULL,"Rotación oblicua","Usar cuando no se indica específicamente cual es."
+"94",NULL,NULL,"Root mean square residual (RMR)","vacio"
+"95",NULL,NULL,"Normed fit index (NFI)","vacio"
+"96",NULL,NULL,"Goodness of fit index (GFI)","vacio"
+"97",NULL,NULL,"Tucker-Lewis index (TLI)","vacio"
+"98",NULL,NULL,"Tau c de Kendall","vacio"
+"99",NULL,NULL,"Índice de rotación de personal (IRP)","\[IRP=  \frac{100\frac{A+D}{2}}{EM}\]
+
+\(A\): Admisiones de personal en el área considerada dentro del periodo considerado.
+<br>
+\(D\): Desvinculación de personal en el área considerada dentro del periodo considerada. 
+<br>
+\(EM\): Efectivo medio del área dentro del periodo considerado. Puede ser obtenido por la 
+suma de los efectivos existentes en la iniciación y en la finalización del periodo, dividida 
+por dos."
+"100",NULL,NULL,"Índice de rotación de personal (IRP) (Con recepción y transferencia de subsistemas)","\[IRP=  \frac{100\frac{A+D}{2}+R+T}{EM}\]
+\(R\): Recepción de personal por transferencia de otros subsistemas 
+
+\(T\): Transferencias de personal para otros subsistemas."
+"101",NULL,NULL,"Satorra-Bentler-scaled chi-square statistic (SB-χ2)","vacio"
+"102",NULL,NULL,"Incremental Fit Index (IFI)","vacio"
+"103",NULL,NULL,"Lambda de Wilks","vacio"
+"104",NULL,NULL,"Coeficiente Omega (ω)","vacio"
+"105",NULL,NULL,"Ecuación de la muestra (Versión 1)","\[n =  \frac{Nz^2}{4Ne^2+z^2}\]"
+"106",NULL,NULL,"Prueba de igualdad de varianzas de Levene","vacio"
+"107",NULL,NULL,"𝑡 de Student para muestras independientes asumiendo varianzas poblacionales diferentes","vacio"
+"108",NULL,NULL,"α ordinal","vacio"
+"109",NULL,NULL,"Chi-cuadrado / grados de libertad (χ2/gl)","vacio"
+"110",NULL,NULL,"Theta de Armor","vacio"
+"111",NULL,NULL,"Correlación biserial-puntual","vacio"
+"112",NULL,NULL,"Muestreo probabilístico, estratificado proporcional (Torres, 1998)","\[ n_0 =  \frac{n}{1+ \frac{n-1}{N}} \]
+
+\(n\): Valor de la muestra inicial (preliminar) 
+
+<br>
+\(n_0\): Muestra ajustada
+
+<br>
+\(N\): Población"
+"113",NULL,NULL,"Muestra por estratos (Hernandez, Fernandez y Baptista, 1999, p. 212)","\[ksh=\frac{n}{N}\]"
+"114",NULL,NULL,"Fórmula de Rulon","vacio"
+"115",NULL,NULL,"Área bajo la curva ROC","Llamada comúnmente AUC (Área Bajo la Curva). También se puede encontrar denominada A' (“a-prima”),​ o el estadístico 'c' (c-statistic)"
+"116",NULL,NULL,"Ecuación de la muestra (Versión 2)","\[n_e = \frac{n_e}{N}n\]
+
+<br>
+
+Esta ecuación parece no tener sentido ya que \(n_e\) se cancela en la ecuación."
+"117",NULL,NULL,"Standardized root mean squared residual (SRMR)","vacio"
+"118",NULL,NULL,"Coeficiente H","El coeficiente H evalúa la confiabilidad del constructo desde el enfoque SEM, dado que puede ser inadecuado el uso de los estimadores de confiabilidad habituales si no se cumplen algunos supuestos básicos."
+"119",NULL,NULL,"Índice de Rotación","\(NES\): Número de empleados separados
+<br>
+\(PEO\): Promedio efectivo de la organización
+<br>
+\(IR\): Indice de Rotacion
+<br>
+\[IR=\frac{NES}{PEO}\]"
+"120",NULL,NULL,"Test HSD (Honestly-significant-difference) de Tukey","vacio"
+"121",NULL,NULL,"V de Cramer","vacio"
+"122",NULL,NULL,"Regresión logística binaria","vacio"
+"123",NULL,NULL,"Prueba binomial","Utilizada para hallar la validez del instrumento"
+"124",NULL,NULL,"Coeﬁciente Angoff-Feldt","vacio"
+"125",NULL,NULL,"Ecuación de la muestra para estimar la media","\[n=\frac{N Z^2 \sigma^2}{e^2(N-1)+Z^2 \sigma^2}\]"
+"126",NULL,NULL,"Modelo de motivación laboral presentado por Víctor Vroom (1962)","\[Motivación = V \times E \times M\]<br>
+\(V\): Valencia
+<br>\(E\): Expectativa
+<br>\(M\): Medios
+<br>"
+"127",NULL,NULL,"Productividad (Gaither y Frazier, 2000)","\[ 
+Productividad =\frac{ Cantidad \ de \ productos \ o \ servicios realizados}{Cantidad \ de \ recursos \ utilizado}
+\]"
+"128",NULL,NULL,"Escala Stanones","vacio"
+"129",NULL,NULL,"Chi Cuadrada con residuos tipificados","vacio"
+"130",NULL,NULL,"Normalización Promax con Kaiser","vacio"
+"131",NULL,NULL,"Motivación de logro y las expectativas  x valor (Atkinson, 1957 citado en Schunk, 1997)","\[Ts = Ms \times Ps  \times Is\]
+
+\[Taf = Maf  \times Pf  \times (-Is)\]
+
+\[Ta = Ts –Taf\]
+<br>
+\(Ts\): Tendencia a acercarse a una meta relacionada con los logros
+<br>
+\(Ms\): Motivo para tener éxito (Motivación  de  logro)
+<br>
+\(Ps\): Probabilidad subjetiva de éxito 
+<br>
+\(Is\):valor de incentivo del éxito 
+<br>
+\(Ts\): Tendencia a evitar el fracaso
+<br>
+\(Taf\): Tendencia  a  evitar  el  fracaso 
+<br>
+\(Maf\): Motivación  para  evitar  el  fracaso  
+<br>
+\(Pf\): Probabilidad  del fracaso 
+<br>
+\(-Is\): Inverso del valor incentivo del éxito 
+<br>
+\(Ta\): Motivación resultante de logro"
+"132",NULL,NULL,"Prueba de Mardia","Normalidad multivariada"
+"133",NULL,NULL,"Método Feldt","Comparar los alfa de Cronbach de las escalas totales a fin de encontrar diferencias significativas entre ellos"
+"134",NULL,NULL,"Método de máxima verosimilitud","Usado en el análisis factorial exploratorio"
+"135",NULL,NULL,"Regla de Sturges","\[k = 1+1.322 \log (N) \]"
+"136",NULL,NULL,"Factorización de Ejes Principales (FEP)","vacio"
+"137",NULL,NULL,"Adecuación del tamaño de la muestra (Hoelter, 1983)","vacio"
+"138",NULL,NULL,"r de Rosenthal","vacio"

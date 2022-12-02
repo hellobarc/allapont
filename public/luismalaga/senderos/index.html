@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Análisis de senderos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<style type="text/css">
+.article{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+body {
+  /*font-family: Arial, sans-serif;*/
+}
+table, td, th {
+	border: 1px solid black;
+}
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+  	text-align: center;
+}
+
+iframe {
+    display:block;
+    margin: 0 auto;
+
+}
+</style>
+
+
+
+
+<div class="article">
+  <h1>Análisis de senderos</h1>
+  <hr>
+  <h2>Introducción</h2>
+  <p>Los procedimientos estadísticos clasicos son por lo general bivariados, es decir, son un modelo que ofrece una visión de la relación o interacción entre dos variables. Pero cuando es necesario incluir mas variables en el modelo es posible utilizar una gran cantidad de tecnicas disponibles. Estas tecnicas multivariadas requieren, por lo general, de varios calculos, y hacen uso del algebra lineal, pero brindan la posibilidad de representar modelos más complejos.</p>
+  <p>En este apartado se estudiara el análisis de senderos.</p>
+
+  <p>El análisis de senderos provee de una representación de las relación entre un número de varaibles. Generalmente las variables son representadas con letras mayúsculas (\(A\),\(B\),\(C\),\(X\)), las flechas de una sola cabeza (\(\rightarrow\)) representan la influencia causal entre las variables, mientras que las flechas curvas de dos cabezas  (<img src="leftright.png" alt="Figura 1." width="30" >) representan la correlación o la covarianza entre las variables.</p> 
+
+  <div style="text-align: center;">
+    <img src="fig1.png" alt="Figura 1." width="200" >
+    <p>Figura 1. Ejmeplo de un diagrama de senderos</p>
+  </div>
+
+  <p>La Figura 1 indica que las variables \(A\), \(B\) y \(X\) tienen influencia causal sobre \(C\). Las variables \(A\) y \(B\) están correlacionadas.</p>
+
+  <hr>
+
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/fH0_KWRHXTY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br>
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/uAmIP__ARKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br>
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/U75rpjpYYJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <hr>
+  <h2>Completitud de un diagrama de senderos</h2>
+  <p>Es necesario clasificar las variables de un diagrama de senderos en dos grandes tipos</p>
+  <p><b>Variables exógenas</b>: Son aquellas que no reciben influencia causal de ningún otra variable.</p>
+  <p><b>Variables endógena</b>: Son aquellas que reciben una o más influencias causales.</p>
+
+  <p>Para ejemplificar vease el siguiente diagrama:  </p>
+
+
+  <div style="text-align: center;">
+    <img src="fig2.png" alt="Figura 2." width="200" >
+    <p>Figura 2. Diagrama de senderos que involucra eventos en el tiempo</p>
+  </div>
+
+  <p>Este modelo involucra variables en el tiempo. \(A\) y \(B\) indican la variables y los sub indices \(1\), \(2\) y \(3\) indican el tiempo en el que se midieron las varaibles.</p>
+
+
+  <p>\(A_1\) y \(B_1\) son varaibles exógenas. \(A_2\) Y \(B_3\) son variables endógenas.</p>
+
+  <p>Para que un diagrama esté completo se cumplen las siguientes condiciones: </p>
+
+  <p><b> <em> Condición 1:</em></b> Todas las variables endógeneas estan conectadas por feclas curvas que indican correlación. Salvo se cumpla la <b> <em> Condición 2</em></b>  </p>
+  <p><b> <em> Condición 2:</em></b> Debe especificarse que se asume una correlación nula entre dos variables exógenas en caso no se coloque una fleca curva.</p>
+  <p><b> <em> Condición 3:</em></b> Las variables endógenas no estan conectadas por flechas curvas.</p>
+  <p><b> <em> Condición 4:</em></b> Las flecas residuales solo apuntan a variables endógenas.</p>
+  <p><b> <em> Condición 5:</em></b> Para conectar dos variables endógenas se usan correlaciones entre flecas residuales.</p>
+  <p><b> <em> Condición 6:</em></b> Todas las variables endógenas tienen una flecha residual apuntando hacia ellas. Salvo se cumpla la <b> <em> Condición 7</em></b></p>
+  <p><b> <em> Condición 7:</em></b> Si se omite una flecha residual apuntando a una variable endógena debe especificarse que toda la varianza de la variable endógena esta explicada por las variables incluidas en el modelo. </p>
+
+  <p>Ejercicio 1: Escriba un algoritmo, empleando el lenguaje de programación de su preferencia, que dado un diagrama de senderos, concluya si es completo o no es completo</p>
+  <hr>
+  Comunicación a:
+  <p>luismalaga@alappont.com</p>
+  <p>Luis Alejandro Málaga Allca</p>
+  <p>Director de Investiagación, Desarrollo e Inovación </p>
+  <p>Alappont S.A.C.</p>
+</div>
+
+
+
+
+		
+</body>
+</html>

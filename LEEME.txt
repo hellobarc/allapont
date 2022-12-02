@@ -1,0 +1,10 @@
+Soy el archivo LEEME
+
+En .env
+
+CACHE_DRIVER=array
+
+Usa esto, es para los roles y permisos
+
+
+Al clonar se elimina la foto de perfil  del storage default. hay una en img del public

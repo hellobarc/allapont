@@ -1,0 +1,33 @@
+\documentclass{article} 
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{tikz} 
+\begin{document} 
+\usetikzlibrary{positioning,arrows.meta,quotes}
+\begin{tikzpicture}[
+transform shape, 
+node distance=2cm,
+thick, 
+r/.style = {circle, draw, minimum size=7mm},
+c/.style={rectangle, draw, minimum size=7mm},
+] 
+
+%nodes
+\node(A1) {$A_1$}; 
+\node[right=1.5cm of A1] (A2)  {$A_2$}; 
+\node[below=1cm of A1] (B1)  {$B_1$}; 
+\node[below=1cm of A2, xshift=1.5cm] (B3)  {$B_3$}; 
+\node[above =1cm of A2, xshift=-1.5cm] (U1){}; 
+\node[below =1cm of B3, xshift=-1.5cm] (U2){};
+%dibujo
+\draw[<->] (A1) to [bend right] (B1);
+\draw[->] (B1) -- (A2);
+\draw[->] (B1) -- (B3);
+\draw[->] (A1) -- (A2);
+\draw[->] (U1) -- (A2);
+\draw[->] (A2) -- (B3);
+\draw[->] (U2) -- (B3);
+\end{tikzpicture} 
+
+
+\end{document}
