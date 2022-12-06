@@ -36,8 +36,13 @@ class TrabajoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->input());
+        $input = $request->input();
 
+        $req_coment = $input['req_coment'];
+        $req_dia = $input['req_dia'];
+        $req_hora = $input['req_hora'];
+        $req_mes = $input['req_mes'];
+        $req_agno = $input['req_agno'];
 
         if (Auth::check())
         {
@@ -45,11 +50,16 @@ class TrabajoController extends Controller
             $user_id = Auth::id();
             $current_session = $request->session()->get('current_session');
 
-
             Avance::updateOrCreate(
                 ['user_id'=>$user_id,'post_session'=> $current_session],
-                ['req_files'=>$json_file_set]
+                ['req_coment'=>$req_coment,'req_dia'=>$req_dia,'req_hora'=>$req_hora,'req_mes'=>$req_mes,'req_agno'=>$req_agno]
             );
+
+
+            return Redirect::to('asesoria/trabajo')->with([
+                'info' => "Created Successfully"
+            ]);
+
         }
 
     }
