@@ -97,8 +97,15 @@
 
 
 <hr>
-<button onclick="fecha()" style="background-color: #075ea8;" class="radfifth uk-align-center uk-button uk-button-default" onclick="return confirm('¿Estás seguro de que deseas crear esta cuota?');">Crear nuevo Requerimiento</button>
-
+<form id="upload-widget" action="/asesoria/trabajo_manage" method="POST">
+    @csrf
+    <input type="hidden" name="req_coment" id="req_coment" value="">
+    <input type="hidden" name="req_dia" id="req_dia" value="">
+    <input type="hidden" name="req_hora" id="req_hora" value="">
+    <input type="hidden" name="req_mes" id="req_mes" value="">
+    <input type="hidden" name="req_agno" id="req_agno" value="">
+    <button type="submit" onclick="fecha()" style="background-color: #075ea8;" class="radfifth uk-align-center uk-button uk-button-default" onclick="return confirm('¿Estás seguro de que deseas crear esta cuota?');">Crear nuevo Requerimiento</button>
+</form>
 
 <script>
 //Esta función es para selecionar la fecha del datepicker
@@ -107,7 +114,6 @@ function fecha()
   let fecha = datepicker.getDate();
   if( fecha === undefined )
   {
-    alert
     document.getElementById('diasSpan').innerHTML = '-';
     document.getElementById('horasSpan').innerHTML = '-';
     document.getElementById('minutosSpan').innerHTML = '-';
@@ -119,6 +125,7 @@ function fecha()
     let fecha_actual = moment();
     //Estas de aca usan moment.js (Recomendado)
     let fecha_dia = fecha_futura.diff(fecha_actual, 'days');
+    let fecha_mes = fecha_futura.diff(fecha_actual, 'month');
     fecha_actual.add(fecha_dia, 'days');
     //
     let fecha_horas = fecha_futura.diff(fecha_actual, 'hours');
@@ -126,9 +133,17 @@ function fecha()
     //
     let fecha_minutos = fecha_futura.diff(fecha_actual, 'minutes');
 
+    console.log(fecha.getMonth());
     document.getElementById('diasSpan').innerHTML = fecha_dia;
     document.getElementById('horasSpan').innerHTML = fecha_horas;
     document.getElementById('minutosSpan').innerHTML = fecha_minutos;
+
+
+    document.getElementById("req_dia").value = fecha_dia;
+    document.getElementById("req_hora").value = fecha_horas;
+    document.getElementById("req_mes").value = parseInt(fecha.getMonth())+1;
+    document.getElementById("req_agno").value = fecha.getFullYear();
+
   }
 
 }

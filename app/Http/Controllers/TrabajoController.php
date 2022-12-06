@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Avance;
+use Illuminate\Support\Facades\Auth;
 
 class TrabajoController extends Controller
 {
@@ -34,7 +36,21 @@ class TrabajoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->input());
+
+
+        if (Auth::check())
+        {
+
+            $user_id = Auth::id();
+            $current_session = $request->session()->get('current_session');
+
+
+            Avance::updateOrCreate(
+                ['user_id'=>$user_id,'post_session'=> $current_session],
+                ['req_files'=>$json_file_set]
+            );
+        }
 
     }
 
@@ -84,20 +100,57 @@ class TrabajoController extends Controller
     }
 
 
+    public function show_form(Request $request){
+        $time = time();
+        $current_session = $request->session()->put('current_session',$time);
+        return view('asesoria/solicitud');
+    }
+
+
     public function file_upload(Request $request){
 
-        $image = $request->file('file');
+        if (Auth::check())
+        {
+
+            $user_id = Auth::id();
+            $current_session = $request->session()->get('current_session');
+            $file_set = [];
+
+            $image = $request->file('file');
             $fileInfo = $image->getClientOriginalName();
             $filename = pathinfo($fileInfo, PATHINFO_FILENAME);
             $extension = pathinfo($fileInfo, PATHINFO_EXTENSION);
-            $file_name= $filename.'-'.time().'.'.$extension;
-            $image->move(public_path('uploads/gallery'),$file_name);
+            $file_name= $user_id.'-'. $current_session.'-'.time().'.'.$extension;
+            $image->move(public_path('uploads/trabajo'),$file_name);
+
+            array_push($file_set,$file_name);
+
+            $existing_files = Avance::where('post_session', $current_session)->pluck('req_files')->first();
+
+            $existing_files =  json_decode($existing_files);
+
+            if(!empty( $existing_files )){
+                foreach($existing_files as $existing_file){
+                    array_push($file_set, $existing_file);
+                }
+            }
+
+            $json_file_set =  json_encode($file_set);
+
+
+            Avance::updateOrCreate(
+                                    ['user_id'=>$user_id,'post_session'=> $current_session],
+                                    ['req_files'=>$json_file_set]
+                                );
 
            // $imageUpload = new Gallery;
           //  $imageUpload->original_filename = $fileInfo;
          //   $imageUpload->filename = $file_name;
           //  $imageUpload->save();
             return response()->json(['success'=>$file_name]);
+        }
+
+
     }
 
 }

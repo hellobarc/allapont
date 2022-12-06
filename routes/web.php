@@ -383,12 +383,17 @@ Route::get('asesoria/informe', function () {
 });#->middleware('can:users.index');
 
 //ASESORIAS INVESTIGACIÓN - usuario informes
+/* Commented by Tarique
 Route::get('asesoria/trabajo', function () {
     return view('asesoria/solicitud');
 });#->middleware('can:users.index');
+*/
 
 //Tarique//
-Route::resource('trabajo_manage','TrabajoController');
+
+Route::get('asesoria/trabajo', 'TrabajoController@show_form')->middleware('auth')->name('asesoria.form_show');
+
+Route::resource('asesoria/trabajo_manage','TrabajoController')->middleware('auth');
 
 Route::post('asesoria/file_upload', 'TrabajoController@file_upload')->name('asesoria.file_upload');
 

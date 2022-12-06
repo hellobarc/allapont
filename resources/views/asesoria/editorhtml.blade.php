@@ -24,5 +24,11 @@
     ] },
     theme: 'snow'
   });
+
+
+  editor.on('text-change', function(delta, oldDelta, source) {
+    var text = editor.getText();
+       document.getElementById("req_coment").value = text;
+});
 </script>
 

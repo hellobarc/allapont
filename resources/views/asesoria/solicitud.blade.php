@@ -175,38 +175,25 @@ Alappont | Mi investigación
 		<!-- [CONTENTS] -->
 		<!-- Must have the corresponding text block -->
 		<div id="tab-contents" style="background: #242526 ; border-radius: 0px 0px 10px 10px; border-right:1px solid #242526; border-left:1px solid; border-color: #242526; border-bottom:1px solid  #242526; margin-bottom: 20px !important;">
-
-
-                <div class="tabtxt" style="background: #242526 !important;">
-                    <p class="uk-text-lead">¿Cómo podemos ayudarte? </p>
-                    <p>Solicita una modificación, avance o cualquier cosa relacionada con el progreso de tu trabajo</p>
-
-                    <div style="background:#f0f2f5 !important; color:#000 !important;  ">
-                        @include('asesoria/editorhtml')
-                    </div>
-                    <hr>
-                    <p class="uk-text-lead">Adjunta tus documentos (Opcional) </p>
-                    @include('asesoria/dropzone')
-
-                    <hr>
-                    <p class="uk-text-lead">Proporcionanos tu fecha de entrega </p>
-                    @include('asesoria/fechayhora')
-
+            <div class="tabtxt" style="background: #242526 !important;">
+                <p class="uk-text-lead">¿Cómo podemos ayudarte? </p>
+                <p>Solicita una modificación, avance o cualquier cosa relacionada con el progreso de tu trabajo</p>
+                <div style="background:#f0f2f5 !important; color:#000 !important;  ">
+                    @include('asesoria/editorhtml')
                 </div>
-
-
+                <hr>
+                <p class="uk-text-lead">Adjunta tus documentos (Opcional) </p>
+                @include('asesoria/dropzone')
+                <hr>
+                <p class="uk-text-lead">Proporcionanos tu fecha de entrega </p>
+                @include('asesoria/fechayhora')
+            </div>
 			<div class="tabtxt">
 				asdasdas
 
             </div>
         </div>
-
     </div>
-
-
-
-
-
 
 
 @endsection
